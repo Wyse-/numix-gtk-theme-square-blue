@@ -1,0 +1,26 @@
+Source: numix-gtk-theme
+Section: x11
+Priority: optional
+Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
+Uploaders: Jeremy Bicha <jbicha@ubuntu.com>
+Build-Depends:
+ debhelper (>= 9),
+ libgdk-pixbuf2.0-dev,
+ libglib2.0-bin,
+ libxml2-utils,
+ ruby-sass,
+Standards-Version: 3.9.8
+Homepage: https://satya164.github.io/numix/
+Vcs-Browser: https://anonscm.debian.org/git/pkg-mate/numix-gtk-theme.git
+Vcs-Git: https://anonscm.debian.org/git/pkg-mate/numix-gtk-theme.git
+
+Package: numix-gtk-theme
+Architecture: all
+Depends:
+ gtk2-engines-murrine (>= 0.98),
+ numix-icon-theme,
+ ${misc:Depends},
+Description: modern flat theme from the Numix project
+ Numix is a modern flat theme with a combination of light and dark
+ elements for any GTK-based desktop environment, including GNOME Shell,
+ Unity, MATE, Cinnamon and more.

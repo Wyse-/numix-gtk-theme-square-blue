@@ -1,0 +1,33 @@
+From 96b45574d931646d64bb926650fdee06ca057e00 Mon Sep 17 00:00:00 2001
+From: Jeremy Bicha <jbicha@linux.com>
+Date: Thu, 16 Jun 2016 18:36:07 -0400
+Subject: [PATCH] fix Makefile to only install theme files
+
+---
+ Makefile | 10 +++++++++-
+ 1 file changed, 9 insertions(+), 1 deletion(-)
+
+diff --git a/Makefile b/Makefile
+index ff44382..a1b59bd 100755
+--- a/Makefile
++++ b/Makefile
+@@ -34,7 +34,15 @@ clean:
+ install: all
+ 	install -d -m755 $(INSTALL_DIR)
+ 
+-	for f in *; do cp -pr $$f $(INSTALL_DIR)/; done
++	cp -pr gtk-2.0		$(INSTALL_DIR)
++	cp -pr gtk-3.0		$(INSTALL_DIR)
++	cp -pr gtk-3.20		$(INSTALL_DIR)
++	cp -pr metacity-1	$(INSTALL_DIR)
++	cp -pr openbox-3	$(INSTALL_DIR)
++	cp -pr xfce-notify-4.0	$(INSTALL_DIR)
++	cp -pr xfwm4		$(INSTALL_DIR)
++	cp -pr unity		$(INSTALL_DIR)
++	cp -p  index.theme	$(INSTALL_DIR)
+ 
+ uninstall:
+ 	rm -rf $(INSTALL_DIR)
+-- 
+2.8.1
+
