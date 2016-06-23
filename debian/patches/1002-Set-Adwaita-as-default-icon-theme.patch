@@ -1,7 +1,7 @@
 From 693123ad0a27631a4907a8e54c90cb0716377ff9 Mon Sep 17 00:00:00 2001
 From: Jeremy Bicha <jbicha@linux.com>
 Date: Thu, 16 Jun 2016 19:46:25 -0400
-Subject: [PATCH] Set Numix as default icon theme for MATE's theme picker
+Subject: [PATCH] Set Adwaita as default icon theme for MATE's theme picker
  (#488)
 
 Choosing a default icon theme is required for Numix to show up in
@@ -20,7 +20,7 @@ index c757888..04e3c00 100755
  
  [X-GNOME-Metatheme]
  GtkTheme=Numix
-+IconTheme=Numix
++IconTheme=Adwaita
  MetacityTheme=Numix
  ButtonLayout=:minimize,maximize,close
 -- 

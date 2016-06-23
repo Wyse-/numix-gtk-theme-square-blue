@@ -18,7 +18,6 @@ Package: numix-gtk-theme
 Architecture: all
 Depends:
  gtk2-engines-murrine (>= 0.98),
-# numix-icon-theme,
  ${misc:Depends},
 Description: modern flat theme from the Numix project
  Numix is a modern flat theme with a combination of light and dark
