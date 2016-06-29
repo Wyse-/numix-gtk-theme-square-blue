@@ -2,3 +2,8 @@
 
 %:
 	dh $@
+
+# https://github.com/numixproject/numix-gtk-theme/issues/490
+override_dh_fixperms:
+	dh_fixperms
+	find -type f -exec chmod -x {} \;
