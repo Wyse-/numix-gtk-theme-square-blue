@@ -1,0 +1,49 @@
+From 7c04082da53af7317745340dfe2aed3d9e14930e Mon Sep 17 00:00:00 2001
+From: Jeremy Bicha <jbicha@ubuntu.com>
+Date: Wed, 27 Jul 2016 10:39:30 -0400
+Subject: [PATCH] Restore and fix Xfce desktop icon shadows. Fix #492
+
+Thanks to Arc and Greybird themes
+
+Bug: https://github.com/numixproject/numix-gtk-theme/issues/492
+Bug-Ubuntu: https://launchpad.net/bugs/1598316
+Forwarded: https://github.com/numixproject/numix-gtk-theme/pull/505
+---
+ gtk-2.0/gtkrc | 20 ++++++++++----------
+ 1 file changed, 10 insertions(+), 10 deletions(-)
+
+diff --git a/gtk-2.0/gtkrc b/gtk-2.0/gtkrc
+index 7157c41..8cda1e1 100755
+--- a/gtk-2.0/gtkrc
++++ b/gtk-2.0/gtkrc
+@@ -517,20 +517,20 @@ style "xfdesktop-windowlist" {
+ style "xfdesktop-icon-view" {
+ 	XfdesktopIconView::label-alpha = 0
+ 	XfdesktopIconView::selected-label-alpha = 60
+-	XfdesktopIconVIew::ellipsize-icon-labels = 1
+-
+-	base[NORMAL] = @selected_bg_color
+-	base[SELECTED] = @selected_bg_color
+-	base[ACTIVE] = @selected_bg_color
++	XfdesktopIconView::shadow-x-offset = 0
++	XfdesktopIconView::shadow-y-offset = 1
++	XfdesktopIconView::selected-shadow-x-offset = 0
++	XfdesktopIconView::selected-shadow-y-offset = 1
++	XfdesktopIconView::shadow-color = "#000000"
++	XfdesktopIconView::selected-shadow-color = "#000000"
++	XfdesktopIconView::shadow-blur-radius = 2
++	XfdesktopIconView::cell-spacing = 2
++	XfdesktopIconView::cell-padding = 6
++	XfdesktopIconView::cell-text-width-proportion = 1.9
+ 
+ 	fg[NORMAL] = @selected_fg_color
+-	fg[SELECTED] = @selected_fg_color
+ 	fg[ACTIVE] = @selected_fg_color
+ 
+-	engine "murrine" {
+-		textstyle = 5
+-		text_shade = 0.05
+-	}
+ }
+ 
+ style "xfwm-tabwin" {
