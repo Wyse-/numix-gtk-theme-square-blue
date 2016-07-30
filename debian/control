@@ -2,7 +2,9 @@ Source: numix-gtk-theme
 Section: x11
 Priority: optional
 Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
-Uploaders: Jeremy Bicha <jbicha@ubuntu.com>
+Uploaders:
+ Jeremy Bicha <jbicha@ubuntu.com>,
+ Mike Gabriel <sunweaver@debian.org>,
 Build-Depends:
  debhelper (>= 9),
  libgdk-pixbuf2.0-dev,
