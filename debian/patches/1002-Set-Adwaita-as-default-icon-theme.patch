@@ -7,15 +7,14 @@ Subject: [PATCH] Set Adwaita as default icon theme for MATE's theme picker
 Choosing a default icon theme is required for Numix to show up in
 MATE's theme picker (mate-appearance-properties)
 
-Please install numix-icon-theme!
 ---
- index.theme | 1 +
+ src/index.theme | 1 +
  1 file changed, 1 insertion(+)
 
 diff --git a/index.theme b/index.theme
 index c757888..04e3c00 100755
---- a/index.theme
-+++ b/index.theme
+--- a/src/index.theme
++++ b/src/index.theme
 @@ -6,5 +6,6 @@ Encoding=UTF-8
  
  [X-GNOME-Metatheme]
