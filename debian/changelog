@@ -1,3 +1,12 @@
+numix-gtk-theme (2.6.4-1) unstable; urgency=medium
+
+  [ Jeremy Bicha ]
+  * debian/patches:
+    + Drop 0001-Fix-Xfce-shadow.patch, applied in new version
+    + Refresh 1002-Set-Adwaita-as-default-icon-theme.patch
+
+ -- Mike Gabriel <sunweaver@debian.org>  Tue, 04 Oct 2016 21:35:11 +0200
+
 numix-gtk-theme (2.6.1-1) unstable; urgency=medium
 
   [ Jeremy Bicha ]
