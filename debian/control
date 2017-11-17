@@ -6,7 +6,7 @@ Uploaders:
  Jeremy Bicha <jbicha@debian.org>,
  Mike Gabriel <sunweaver@debian.org>,
 Build-Depends:
- debhelper (>= 9),
+ debhelper (>= 10),
  libgdk-pixbuf2.0-dev,
  libglib2.0-bin,
  libxml2-utils,
