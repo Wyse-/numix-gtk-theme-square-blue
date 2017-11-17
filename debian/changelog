@@ -1,3 +1,9 @@
+numix-gtk-theme (2.6.7-1) UNRELEASED; urgency=medium
+
+  * New upstream release.
+
+ -- Jeremy Bicha <jbicha@debian.org>  Fri, 17 Nov 2017 11:01:57 -0500
+
 numix-gtk-theme (2.6.6-1) unstable; urgency=medium
 
   * New upstream release.

@@ -3,7 +3,7 @@ Section: x11
 Priority: optional
 Maintainer: MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
 Uploaders:
- Jeremy Bicha <jbicha@ubuntu.com>,
+ Jeremy Bicha <jbicha@debian.org>,
  Mike Gabriel <sunweaver@debian.org>,
 Build-Depends:
  debhelper (>= 9),
