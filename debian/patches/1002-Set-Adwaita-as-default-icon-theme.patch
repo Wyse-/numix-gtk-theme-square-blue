@@ -1,5 +1,5 @@
 From 693123ad0a27631a4907a8e54c90cb0716377ff9 Mon Sep 17 00:00:00 2001
-From: Jeremy Bicha <jbicha@linux.com>
+From: Jeremy Bicha <jbicha@ubuntu.com>
 Date: Thu, 16 Jun 2016 19:46:25 -0400
 Subject: [PATCH] Set Adwaita as default icon theme for MATE's theme picker
  (#488)
@@ -7,6 +7,9 @@ Subject: [PATCH] Set Adwaita as default icon theme for MATE's theme picker
 Choosing a default icon theme is required for Numix to show up in
 MATE's theme picker (mate-appearance-properties)
 
+But Ubuntu Developers don't want to install numix-icon-theme by default.
+For instance, Xubuntu wants to include numix-gtk-theme by default, but
+not be forced to install the theme.
 ---
  src/index.theme | 1 +
  1 file changed, 1 insertion(+)
@@ -15,13 +18,11 @@ diff --git a/index.theme b/index.theme
 index c757888..04e3c00 100755
 --- a/src/index.theme
 +++ b/src/index.theme
-@@ -6,5 +6,6 @@ Encoding=UTF-8
+@@ -6,6 +6,6 @@ Encoding=UTF-8
  
  [X-GNOME-Metatheme]
  GtkTheme=Numix
+-IconTheme=Numix
 +IconTheme=Adwaita
  MetacityTheme=Numix
  ButtonLayout=:minimize,maximize,close
--- 
-2.8.1
-

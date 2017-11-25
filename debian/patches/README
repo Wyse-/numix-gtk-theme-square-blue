@@ -1,3 +1,6 @@
 0xxx: Grabbed from upstream development.
 1xxx: Possibly relevant for upstream adoption.
 2xxx: Only relevant for official Debian release.
+
+Add patches to both debian/patches/series and debian/patches/ubuntu.series
+if they should apply on Debian and on Ubuntu
