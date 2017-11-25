@@ -3,10 +3,17 @@
 %:
 	dh $@
 
-# https://github.com/numixproject/numix-gtk-theme/issues/490
+# https://github.com/numixproject/numix-gtk-theme/pull/690
 override_dh_fixperms:
 	dh_fixperms
-	find -type f -exec chmod -x {} \;
+	find debian/numix-gtk-theme -type f -exec chmod -x {} \;
+
+override_dh_gencontrol:
+ifeq ($(shell dpkg-vendor --query vendor),Ubuntu)
+	dh_gencontrol -- -Vicon-theme:Depends='adwaita-icon-theme'
+else
+	dh_gencontrol -- -Vicon-theme:Depends='numix-icon-theme'
+endif
 
 get-orig-source:
 	uscan --noconf --force-download --rename --download-current-version --destdir=..
