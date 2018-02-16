@@ -2,6 +2,7 @@ numix-gtk-theme (2.6.7-2) UNRELEASED; urgency=medium
 
   * Change Maintainer to Desktop Themes Team, but keep old Uploaders
   * Import to https://salsa.debian.org/ with full upstream source
+  * Add debian/gbp.conf
 
  -- Jeremy Bicha <jbicha@debian.org>  Thu, 15 Feb 2018 19:21:17 -0500
 
