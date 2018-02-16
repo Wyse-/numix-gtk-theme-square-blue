@@ -5,7 +5,7 @@ Maintainer: Debian Desktop Theme Team <numix-gtk-theme@packages.debian.org>
 Uploaders: Jeremy Bicha <jbicha@debian.org>,
            Mike Gabriel <sunweaver@debian.org>,
            Debian+Ubuntu MATE Packaging Team <debian-mate@lists.debian.org>
-Build-Depends: debhelper (>= 10),
+Build-Depends: debhelper (>= 11),
                libgdk-pixbuf2.0-dev,
                libglib2.0-bin,
                libxml2-utils,

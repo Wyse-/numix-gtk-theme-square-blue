@@ -14,6 +14,3 @@ ifeq ($(shell dpkg-vendor --query vendor),Ubuntu)
 else
 	dh_gencontrol -- -Vicon-theme:Depends='numix-icon-theme'
 endif
-
-get-orig-source:
-	uscan --noconf --force-download --rename --download-current-version --destdir=..
