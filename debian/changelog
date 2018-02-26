@@ -1,3 +1,11 @@
+numix-gtk-theme (2.6.7-3) UNRELEASED; urgency=medium
+
+  * Don't use Breaks: murrine-themes on Ubuntu where gtk2-engines-murrine
+    does not have a useless and wrong dependency on murrine-themes.
+    See bugs 623783 and 838994 for previous attempts to fix this issue.
+
+ -- Jeremy Bicha <jbicha@debian.org>  Mon, 26 Feb 2018 17:10:31 -0500
+
 numix-gtk-theme (2.6.7-2) unstable; urgency=medium
 
   * Change Maintainer to Desktop Themes Team, but keep old Uploaders

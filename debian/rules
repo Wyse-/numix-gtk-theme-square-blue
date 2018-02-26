@@ -13,4 +13,5 @@ ifeq ($(shell dpkg-vendor --query vendor),Ubuntu)
 	dh_gencontrol -- -Vicon-theme:Depends='adwaita-icon-theme'
 else
 	dh_gencontrol -- -Vicon-theme:Depends='numix-icon-theme'
+	dh_gencontrol -- -Vmurrine:Breaks='murrine-themes (<= 0.98.11)'
 endif
