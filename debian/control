@@ -10,7 +10,7 @@ Build-Depends: debhelper (>= 11),
                libglib2.0-bin,
                libxml2-utils,
                ruby-sass
-Standards-Version: 4.1.1
+Standards-Version: 4.3.0
 Homepage: https://github.com/numixproject/numix-gtk-theme
 Vcs-Git: https://salsa.debian.org/desktop-themes-team/numix-gtk-theme.git
 Vcs-Browser: https://salsa.debian.org/desktop-themes-team/numix-gtk-theme
