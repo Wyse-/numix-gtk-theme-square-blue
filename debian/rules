@@ -3,6 +3,18 @@
 %:
 	dh $@
 
+# Choosing a default icon theme is required for Numix to show up in
+# MATE's theme picker (mate-appearance-properties)
+# But Ubuntu Developers don't want to install numix-icon-theme by default.
+# For instance, Xubuntu wants to include numix-gtk-theme by default, but
+# not be forced to install the theme.
+override_dh_auto_install:
+	dh_auto_install
+ifeq ($(shell dpkg-vendor --query vendor),Ubuntu)
+	sed -i s/IconTheme=Numix/IconTheme=Adwaita/ \
+		debian/numix-gtk-theme/usr/share/themes/Numix/index.theme
+endif
+
 # https://github.com/numixproject/numix-gtk-theme/pull/690
 override_dh_fixperms:
 	dh_fixperms
