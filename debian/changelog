@@ -1,3 +1,12 @@
+numix-gtk-theme (2.6.7-4+deb10u1) buster; urgency=medium
+
+  * debian/control:
+    + Revert Jeremy Bicha's work-around ("Add Breaks: murrine-themes")
+      for to-be-finally resolved Debian bug #838994 (in gtk2-engines-murrine).
+      (Closes: #891493).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Tue, 03 Dec 2019 08:40:29 +0100
+
 numix-gtk-theme (2.6.7-4) unstable; urgency=medium
 
   * Use sed to set Adwaita as default icon theme on Ubuntu
