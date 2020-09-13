@@ -1,4 +1,5 @@
 ## Numix GTK Square Blue
+
 A [numix-gtk-theme](https://salsa.debian.org/desktop-themes-team/numix-gtk-theme/-/tree/debian/buster/updates) fork, based on the version provided on Debian 10 Buster.
 
 As the name suggests, the modifications to the original Numix GTK theme are as follows:
@@ -9,11 +10,21 @@ Two extra scripts have been included in the scripts/ folder, which may be useful
 * change-main-color.sh: changes the main Numix color (i.e. "#f0544c") to the provided one (in this case "#2f98ee")
 * colorize-assets.sh: colorizes all Numix provided .png assets to the provided color (in this case "#2f98ee") via imagemagick
 
+The theme has only been tested on Xfce.
+
 A compiled version of the theme will be provided in the Releases section.
+
 For more information refer to the original README.md, available below.
 
 <details>
+    <summary>Screenshots</summary>
+
+![Screenshot 1](https://user-images.githubusercontent.com/5454041/93026778-ca27d200-f608-11ea-86d0-cde6d5adf2a5.png)
+</details>
+
+<details>
   <summary>Original Readme</summary>
+
 ## Numix
 ##### A modern flat theme with a combination of light and dark elements. It supports GNOME, Unity, Xfce and Openbox.
 [![By The Numix Project](https://img.shields.io/badge/By-The%20Numix%20Project-f0544c.svg?style=flat-square)](https://numixproject.org/) &nbsp;[![Circle CI](https://img.shields.io/circleci/project/numixproject/numix-gtk-theme/master.svg?circle-token=b14acf911433d315298235b0c2fbf7b2670a92a8&maxAge=3600&style=flat-square)](https://circleci.com/gh/numixproject/numix-gtk-theme/tree/master) &nbsp;[![GitHub release](https://img.shields.io/github/release/numixproject/numix-gtk-theme.svg?maxAge=3600&style=flat-square)](https://github.com/numixproject/numix-gtk-theme/releases/latest) &nbsp;![Supports GTK+ 3.18](https://img.shields.io/badge/GTK%2B-3.18-4a90d9.svg?style=flat-square) &nbsp;![Supports GTK+ 3.24](https://img.shields.io/badge/GTK%2B-3.24-4a90d9.svg?style=flat-square)
